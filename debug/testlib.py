@@ -40,7 +40,7 @@ def compile(args): # pylint: disable=redefined-builtin
     if gcc_cmd:
         cmd = [gcc_cmd]
     else:
-        cmd = ["riscv64-unknown-elf-gcc"]
+        cmd = ["riscv64-linux-gcc"]
     cmd.append("-g")
     for arg in args:
         found = find_file(arg)
